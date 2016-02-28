@@ -1,4 +1,6 @@
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+" "+y is the sequence to copy TO the Windows clipboard
+" "+p is the sequence to copy FROM the Windows clipboard
 function! Putclip(type, ...) range
   let sel_save = &selection
   let &selection = "inclusive"

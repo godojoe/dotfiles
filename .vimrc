@@ -1,3 +1,4 @@
+hi IncSearch ctermfg=black ctermbg=cyan cterm=BOLD
 set incsearch
 set relativenumber
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab

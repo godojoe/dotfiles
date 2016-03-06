@@ -36,3 +36,17 @@ function! Putclip(type, ...) range
 vnoremap <silent> <leader>y :call Putclip(visualmode(), 1)
 nnoremap <silent> <leader>y :call Putclip('n', 1)
 
+"=====[ Highlight matches when jumping to next ]=============
+nnoremap <silent> n n:call HLNext(0.4)
+nnoremap <silent> N N:call HLNext(0.4)
+function! HLNext (blinktime)
+highlight WhiteOnRed ctermfg=white ctermbg=red
+let [bufnum, lnum, col, off] = getpos('.')
+let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
+let target_pat = '\c\%#'.@/
+let ring = matchadd('WhiteOnRed', target_pat, 101)
+redraw
+exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+call matchdelete(ring)
+redraw
+endfunction

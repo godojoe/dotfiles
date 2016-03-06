@@ -2,6 +2,7 @@ hi IncSearch ctermfg=black ctermbg=cyan cterm=BOLD
 set incsearch
 set wildmenu
 set wildmode=longest:list,full
+set history=200
 set number
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 " "+y is the sequence to copy TO the Windows clipboard

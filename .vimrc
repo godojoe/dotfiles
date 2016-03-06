@@ -50,3 +50,5 @@ exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
 call matchdelete(ring)
 redraw
 endfunction
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+set list

@@ -7,6 +7,10 @@ set wildmode=longest:list,full
 set history=200
 nnoremap <silent> øb :bprevious
 nnoremap <silent> æb :bnext
+ map <C-h> <C-w>h 
+ map <C-j> <C-w>j 
+ map <C-k> <C-w>k 
+ map <C-l> <C-w>l 
 set number
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 " "+y is the sequence to copy TO the Windows clipboard

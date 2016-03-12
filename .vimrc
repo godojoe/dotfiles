@@ -1,7 +1,16 @@
 hi IncSearch ctermfg=black ctermbg=cyan cterm=BOLD
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%100v', 100)
+
 let mapleader=','
+
+" edit files in directory of current buffer
+cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
+map <leader>ew :e %%
+map <leader>es :sp %%
+map <leader>ev :vsp %%
+map <leader>et :tabe %%
+
 set incsearch
 set wildmenu
 set wildmode=longest:list,full

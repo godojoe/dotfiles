@@ -1,7 +1,7 @@
 hi IncSearch ctermfg=black ctermbg=cyan cterm=BOLD
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%100v', 100)
-set mapleader=','
+let mapleader=','
 set incsearch
 set wildmenu
 set wildmode=longest:list,full

@@ -3,6 +3,7 @@ highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%100v', 100)
 
 let mapleader=','
+noremap ' ,
 
 " edit files in directory of current buffer
 cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>

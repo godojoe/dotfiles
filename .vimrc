@@ -66,4 +66,4 @@ redraw
 endfunction
 exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 set list
-let g:netrw_liststyle=3
+" let g:netrw_liststyle=3

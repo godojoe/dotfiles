@@ -67,4 +67,6 @@ redraw
 endfunction
 exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 set list
+source vim-surround/plugin/surround.vim 
+source vim-repeat/autoload/repeat.vim
 " let g:netrw_liststyle=3

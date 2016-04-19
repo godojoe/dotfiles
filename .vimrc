@@ -70,3 +70,4 @@ set list
 source vim-surround/plugin/surround.vim 
 source vim-repeat/autoload/repeat.vim
 " let g:netrw_liststyle=3
+command Vimrc e ~/.vimrc

@@ -71,3 +71,4 @@ source vim-surround/plugin/surround.vim
 source vim-repeat/autoload/repeat.vim
 " let g:netrw_liststyle=3
 command Vimrc e ~/.vimrc
+command Howto e /cygdrive/c/Users/g94531/Desktop/HOWTO.txt
